@@ -14,4 +14,4 @@ jobs:
     - name: Delete old docker container
       run: docker rm -f chucknorris || true
     - name: Run latest docker container
-      run: docker run -d -p 8000:8000 --name chucknorris munguriek/chucknorris
+      run: docker run -d -p 8000:3000 --name chucknorris munguriek/chucknorris
