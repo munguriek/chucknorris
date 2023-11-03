@@ -10,8 +10,8 @@ jobs:
 
     steps:
     - name: Pull image from Docker
-      run: sudo docker pull munguriek/chucknorris:latest
+      run: docker pull munguriek/chucknorris:latest
     - name: Delete old docker container
-      run: sudo docker rm -f chucknorris || true
+      run: docker rm -f chucknorris || true
     - name: Run latest docker container
-      run: sudo docker run -d -p 8000:8000 --name chucknorris
+      run: docker run -d -p 8000:8000 --name chucknorris
